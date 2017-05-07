@@ -6,7 +6,7 @@
     carousel.slides = document.querySelectorAll('.slide');
     carousel.prevBtn = document.querySelector('#slideShowPrev');
     carousel.nextBtn = document.querySelector('#slideShowNext');
-    carousel.dots = document.querySelectorAll('.dot')
+    carousel.dots = document.querySelectorAll('.dot');
 
     /*显示指定轮播页面*/
     carousel.showPage = function (num) {
@@ -92,12 +92,10 @@
                     that.showPage(index+1)
                 },false)
             })(index)
-
         }
-
     }
 
     carousel.showPage(1)
     carousel.handler();
-    //carousel.autoShow();
+    carousel.autoShow();
 })()

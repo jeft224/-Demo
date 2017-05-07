@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        <!-- 纯css实现左右横线，文字自适应居中效果 -->
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            display: table;
+            width: 600px;
+            line-height: 32px;
+            margin: 200px;
+            background-color: #fff;
+            white-space: nowrap;
+            border-spacing: 10px 0;
+        }
+        div:before,div:after{
+            display: table-cell;
+            content: '';
+            width: 50%;
+            background: -webkit-linear-gradient(#eee,#eee) repeat-x left center;
+            background:linear-gradient(#eee,#eee) repeat-x left center;
+            -webkit-background-size: 1px 1px;
+            background-size: 1px 1px;
+        }
+    </style>
+</head>
+<body>
+<div>浏览器兼容</div>
+</body>
+</html>
