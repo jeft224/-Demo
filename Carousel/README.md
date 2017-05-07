@@ -15,7 +15,7 @@
            </div>
          ```
     
-         ​
+         
     
      -   前后移动的按钮
     
@@ -38,100 +38,99 @@
         </div>
        ```
     
-       ​
+       
 
 -   ### CSS部分：
 
      > 重置样式
 
-    ​```css
-    *{
-      margin：0px;
-      padding:0px;
-      box-sizing: border-box;
-    }
-    ​```
-    
-    **box-sizing:**会将padding和border算入到高度和宽度里面去。
-    
-    参考链接：[box-sizing属性](http://www.w3school.com.cn/cssref/pr_box-sizing.asp)
-    
-    > 轮播图样式
-    
-    ​```css
-    .carousel-container{
-        max-width: 800px;
-        position: relative;
-        margin: 0 auto;/*水平居中*/
-    }
-    .slide {
-        display: none;
-    }
-    .slide img{
-        width: 100%;
-    }
-    ​```
-    
-    > 前后移动按钮的样式
-    
-    ​```css
-    .prev,.next{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        margin-top: -22px;
-        padding: 16px;
-        color:white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-    }
-    
-    .prev{
-        left: 0;
-        border-radius: 0 3px 3px 0;
-    }
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-    
-    /*当鼠标Hover时，背景色改变，提升用户体验*/
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-    ​```
-    
-    **transition：**属性渐变。0.6s是指完成过渡效果需要多少秒或者毫秒，ease是指速度效果的曲线函数
-    
-    参考链接：[transition属性](http://www.w3school.com.cn/css3/css3_transition.asp)
-    
-    > 圆型按钮的样式
-    
-    ​```css
-    .dotGroup{
-        text-align: center;
-        position: relative;
-        margin-top: -30px;
-    }
-    .dot {
-        cursor:pointer;
-        height: 13px;
-        width: 13px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-    }
+     ```css
+     *{
+       margin：0px;
+       padding:0px;
+       box-sizing: border-box;
+     }
+     ```
+
+     **box-sizing:**会将padding和border算入到高度和宽度里面去。
+
+     参考链接：[box-sizing属性](http://www.w3school.com.cn/cssref/pr_box-sizing.asp)
+
+     >轮播图样式
 
 
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-    ​```
-    
-    ​
+     ```css
+     .carousel-container{
+         max-width: 800px;
+         position: relative;
+         margin: 0 auto;/*水平居中*/
+     }
+     .slide {
+         display: none;
+     }
+     .slide img{
+         width: 100%;
+     }
+     ```
+
+     > 前后移动按钮的样式
+
+     ```css
+     .prev,.next{
+         cursor: pointer;
+         position: absolute;
+         top: 50%;
+         margin-top: -22px;
+         padding: 16px;
+         color:white;
+         font-weight: bold;
+         font-size: 18px;
+         transition: 0.6s ease;
+     }
+
+     .prev{
+         left: 0;
+         border-radius: 0 3px 3px 0;
+     }
+     .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+     }
+
+     /*当鼠标Hover时，背景色改变，提升用户体验*/
+     .prev:hover, .next:hover {
+         background-color: rgba(0,0,0,0.8);
+     }
+     ```
+
+     **transition：**属性渐变。0.6s是指完成过渡效果需要多少秒或者毫秒，ease是指速度效果的曲线函数
+
+     参考链接：[transition属性](http://www.w3school.com.cn/css3/css3_transition.asp)
+
+     > 圆型按钮的样式
+
+     ```css
+     .dotGroup{
+         text-align: center;
+         position: relative;
+         margin-top: -30px;
+     }
+     .dot {
+         cursor:pointer;
+         height: 13px;
+         width: 13px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+     }
+     .active, .dot:hover {
+         background-color: #717171;
+     }
+     ```
+
+
 
 -   ### JS部分：
 
