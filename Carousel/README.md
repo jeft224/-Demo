@@ -14,11 +14,11 @@
                   <img src="./images/img1.jpg" alt="">
            </div>
          ```
-
+    
          ​
-
+    
      -   前后移动的按钮
-
+    
          ```html
          <!-- 前翻页，后翻页按钮 -->
          <a class="prev" id="slideShowPrev">&#10094;</a>
@@ -26,9 +26,9 @@
          <a class="next" id="slideShowNext">&#10095;</a>
          <!-- &#10095 为特殊Unicode字符 -->
          ```
-
+    
      - 圆点按钮
-
+    
        ```html
         <!-- 圆点坐标按钮组 -->
         <div class="dotGroup">
@@ -37,28 +37,28 @@
            <span class="dot"></span>
         </div>
        ```
-
+    
        ​
 
 -   ### CSS部分：
 
-    	> 重置样式
+     > 重置样式
 
-    ```css
+    ​```css
     *{
       margin：0px;
       padding:0px;
       box-sizing: border-box;
     }
-    ```
-
+    ​```
+    
     **box-sizing:**会将padding和border算入到高度和宽度里面去。
-
+    
     参考链接：[box-sizing属性](http://www.w3school.com.cn/cssref/pr_box-sizing.asp)
-
+    
     > 轮播图样式
-
-    ```css
+    
+    ​```css
     .carousel-container{
         max-width: 800px;
         position: relative;
@@ -70,11 +70,11 @@
     .slide img{
         width: 100%;
     }
-    ```
-
+    ​```
+    
     > 前后移动按钮的样式
-
-    ```css
+    
+    ​```css
     .prev,.next{
         cursor: pointer;
         position: absolute;
@@ -86,7 +86,7 @@
         font-size: 18px;
         transition: 0.6s ease;
     }
-
+    
     .prev{
         left: 0;
         border-radius: 0 3px 3px 0;
@@ -95,20 +95,20 @@
         right: 0;
         border-radius: 3px 0 0 3px;
     }
-
+    
     /*当鼠标Hover时，背景色改变，提升用户体验*/
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
     }
-    ```
-
+    ​```
+    
     **transition：**属性渐变。0.6s是指完成过渡效果需要多少秒或者毫秒，ease是指速度效果的曲线函数
-
+    
     参考链接：[transition属性](http://www.w3school.com.cn/css3/css3_transition.asp)
-
+    
     > 圆型按钮的样式
-
-    ```css
+    
+    ​```css
     .dotGroup{
         text-align: center;
         position: relative;
@@ -129,8 +129,8 @@
     .active, .dot:hover {
         background-color: #717171;
     }
-    ```
-
+    ​```
+    
     ​
 
 -   ### JS部分：
